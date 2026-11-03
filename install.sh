@@ -3,7 +3,7 @@
 # Aether-Claw Node Installer
 # Cross-platform (Windows & Mac) - secure AI assistant
 #
-# Usage: curl -sSL https://raw.githubusercontent.com/RuneweaverStudios/Aether-Claw-Node-Version/main/install.sh | bash -s -- [OPTIONS]
+# Usage: curl -sSL https://raw.githubusercontent.com/austindixson/Aether-Claw-Node-Version/main/install.sh | bash -s -- [OPTIONS]
 #
 
 set -e
@@ -16,9 +16,9 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 INSTALL_DIR="${HOME}/.aether-claw-node"
-REPO_URL="https://github.com/RuneweaverStudios/Aether-Claw-Node-Version.git"
+REPO_URL="https://github.com/austindixson/Aether-Claw-Node-Version.git"
 BRANCH="main"
-INSTALLER_RAW="https://raw.githubusercontent.com/RuneweaverStudios/Aether-Claw-Node-Version/main/install.sh"
+INSTALLER_RAW="https://raw.githubusercontent.com/austindixson/Aether-Claw-Node-Version/main/install.sh"
 
 # Run Node CLI from install dir (never use PATH 'aetherclaw' — may be Python).
 node_cli() {
@@ -507,7 +507,7 @@ if command -v git &> /dev/null; then
     git clone --depth 1 -b "$BRANCH" "$REPO_URL" .
 else
     printf "${YELLOW}Downloading archive...${NC}\n"
-    curl -sSL "https://github.com/RuneweaverStudios/Aether-Claw-Node-Version/archive/refs/heads/${BRANCH}.tar.gz" | tar -xzf - --strip-components=1 -C .
+    curl -sSL "https://github.com/austindixson/Aether-Claw-Node-Version/archive/refs/heads/${BRANCH}.tar.gz" | tar -xzf - --strip-components=1 -C .
 fi
 
 # Restore backups

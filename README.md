@@ -5,7 +5,7 @@ Node-only, cross-platform (Windows & Mac) secure AI assistant with persistent me
 ## Quick Install (curl)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/RuneweaverStudios/Aether-Claw-Node-Version/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/austindixson/Aether-Claw-Node-Version/main/install.sh | bash
 ```
 
 Then:
@@ -18,7 +18,7 @@ aetherclaw tui
 ## Manual setup (global install only)
 
 ```bash
-git clone https://github.com/RuneweaverStudios/Aether-Claw-Node-Version.git
+git clone https://github.com/austindixson/Aether-Claw-Node-Version.git
 cd Aether-Claw-Node-Version
 npm install
 npm install -g .
@@ -63,7 +63,7 @@ This backs up `.env`, `swarm_config.json`, and `brain/` to a temp directory, run
 **If your current install is not a git repo** (e.g. you used `npm install -g` from a tarball):
 
 1. Clone the repo fresh:  
-   `git clone https://github.com/RuneweaverStudios/Aether-Claw-Node-Version.git && cd Aether-Claw-Node-Version`
+   `git clone https://github.com/austindixson/Aether-Claw-Node-Version.git && cd Aether-Claw-Node-Version`
 2. Copy your existing data into the clone:
    - `.env` → project root
    - `swarm_config.json` → project root
